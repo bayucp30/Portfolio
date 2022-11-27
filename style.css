@@ -1,0 +1,24 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: rgb(162, 223, 253);
+}
+
+.jumbotron img {
+    width: 200px;
+}
+
+#projects {
+    background-color: rgb(162, 223, 253);
+}
+
+.footss {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 5rem;
+}
