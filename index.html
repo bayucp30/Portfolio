@@ -130,6 +130,40 @@
         </div>
       </div>
     </div>
+
+    <section id="my-png">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Picture</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="png-box">
+              <h4 class="png-name">PNG 1</h4>
+              <img src="img/png1.png" alt="png-3" class="png-img">
+              <a href="#" class="btn btn-light png-detail-btn">Show detail</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="png-box">
+              <h4 class="png-name">PNG 2</h4>
+              <img src="img/png2.png" alt="png-3" class="png-img">
+              <a href="#" class="btn btn-light png-detail-btn">Show detail</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="png-box">
+              <h4 class="png-name">PNG 3</h4>
+              <img src="img/png3.png" alt="png-3" class="png-img">
+              <a href="#" class="btn btn-light png-detail-btn">Show detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ffffff" fill-opacity="1"
         d="M0,160L34.3,160C68.6,160,137,160,206,181.3C274.3,203,343,245,411,261.3C480,277,549,267,617,229.3C685.7,192,754,128,823,112C891.4,96,960,128,1029,149.3C1097.1,171,1166,181,1234,170.7C1302.9,160,1371,128,1406,112L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
@@ -137,6 +171,9 @@
     </svg>
   </section>
   <!-- Project end -->
+
+
+
 
   <!-- contact -->
   <section id="contact">
@@ -174,6 +211,9 @@
         </div>
       </div>
     </div>
+
+
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="rgb(22, 174, 250)" fill-opacity="1"
         d="M0,96L34.3,112C68.6,128,137,160,206,149.3C274.3,139,343,85,411,96C480,107,549,181,617,181.3C685.7,181,754,107,823,96C891.4,85,960,139,1029,176C1097.1,213,1166,235,1234,240C1302.9,245,1371,235,1406,229.3L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
@@ -229,6 +269,16 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".png-box"), {
+      max: 35,
+      speed: 1000,
+      // scale: 1.1,
+      glare: true,
+    });
   </script>
 </body>
 

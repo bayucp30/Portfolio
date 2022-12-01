@@ -22,3 +22,97 @@ body {
 section {
     padding-top: 5rem;
 }
+
+/* png section */
+.png-box {
+    position: relative;
+    background-color: rgb(22, 174, 250);
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.png-box::before {
+    content: 'MY';
+    position: absolute;
+    color: #fff;
+    font-size: 6em;
+    font-weight: bold;
+    font-style: italic;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: .5s;
+}
+
+.png-box:hover::before {
+    
+    opacity: 0.5;
+}
+
+.png-box::after {
+    content: 'PNG';
+    position: absolute;
+    color: #fff;
+    font-size: 4.3em;
+    font-weight: bold;
+    font-style: italic;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: .5s;
+}
+
+.png-box:hover::after {
+    
+    opacity: 0.5;
+}
+
+.png-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transform: translate3d(0, 0, 50px);
+    transition: 0.5s;
+}
+
+.png-box:hover .png-name {
+    top: 20px;
+    opacity: 1;
+}
+
+.png-detail-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.png-box:hover .png-detail-btn {
+    opacity: 1;
+    bottom: 20px;
+}
+
+.png-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -52%, 100px);
+    max-width: 350px;
+    max-height: 350px;
+    transition: .5s;
+    z-index: 10;
+    /* background-color: black; */
+}
+
+.png-box:hover .png-img {
+    transform: translate3d(-50%, -52%, 100px) rotate(3deg) scale(1.2);
+}
